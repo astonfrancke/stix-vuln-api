@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StixVuln.Core\StixVuln.Core.csproj" />
+    <ProjectReference Include="..\StixVuln.Infrastructure\StixVuln.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

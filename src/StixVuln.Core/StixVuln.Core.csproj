@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\StixVuln.SharedKernel\StixVuln.SharedKernel.csproj" />
+    <ProjectReference Include="..\StixVuln.SharedKernel\StixVuln.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>

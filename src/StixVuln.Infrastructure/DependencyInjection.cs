@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using StixVuln.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using StixVuln.Core.Vulnerability.Interfaces;
 
 namespace StixVuln.Infrastructure;
 public static class DependencyInjection
@@ -28,6 +23,7 @@ public static class DependencyInjection
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("VulnerabilityDb")));
         //services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IVulnerabiltiesRepository, VulnerabilitiesRepository>();
 
         return services;
     }

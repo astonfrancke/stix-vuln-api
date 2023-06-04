@@ -1,17 +1,21 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace StixVuln.Core.Vulnerability;
+namespace StixVuln.Core;
 public class ExternalReference
 {
-    public int ExternalReferenceId { get; set; }
-    public string SourceName { get; }
-    public string? Description { get; }
-    public string? ExternalId { get; }
-    public string? Url { get; }
+    public int ExternalReferenceId { get; private set; }
+    public string SourceName { get; private set; }
+    public string? Description { get; private set; }
+    public string? ExternalId { get; private set; }
+    public string? Url { get; private set; }
 
     private readonly Dictionary<string, string> _hashes = new();
     public IReadOnlyDictionary<string, string> Hashes =>
         new ReadOnlyDictionary<string, string>(_hashes);
+
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    public ExternalReference() { }
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
     public ExternalReference(
         string sourceName,

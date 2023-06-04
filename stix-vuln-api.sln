@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StixVuln.SharedKernel", "StixVuln.SharedKernel\StixVuln.SharedKernel.csproj", "{453CD186-CE9D-4BB2-8671-A98EDEC631D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{F6879AB2-EF88-4A9E-8B3A-647D684527DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6879AB2-EF88-4A9E-8B3A-647D684527DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6879AB2-EF88-4A9E-8B3A-647D684527DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453CD186-CE9D-4BB2-8671-A98EDEC631D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453CD186-CE9D-4BB2-8671-A98EDEC631D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453CD186-CE9D-4BB2-8671-A98EDEC631D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453CD186-CE9D-4BB2-8671-A98EDEC631D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +64,6 @@ Global
 		{2C3E9B8B-3C8E-4ED8-A71E-0099E972ACD3} = {35F12305-7006-4325-AA8B-2DF66974CB0C}
 		{5D784AF3-8D45-4242-9C30-851A003890C2} = {0368798C-D55E-4B1B-98BC-188B5A1EB97B}
 		{F6879AB2-EF88-4A9E-8B3A-647D684527DC} = {0368798C-D55E-4B1B-98BC-188B5A1EB97B}
+		{453CD186-CE9D-4BB2-8671-A98EDEC631D2} = {35F12305-7006-4325-AA8B-2DF66974CB0C}
 	EndGlobalSection
 EndGlobal

@@ -36,12 +36,12 @@ public class ExternalReference
             string.IsNullOrEmpty(externalId) &&
             string.IsNullOrEmpty(url))
         {
-            throw new ArgumentNullException("At least one of the description, url, or external_id properties must be present.");
+            throw new ArgumentNullException("At least one of the description, url, or external_id properties must be present");
         }
 
         if (!string.IsNullOrEmpty(url) && string.IsNullOrEmpty(hash))
         {
-            throw new ArgumentNullException("Hash should be provided when the url property is present.");
+            throw new ArgumentNullException("Hash should be provided when the url property is present");
         }
 
         SourceName = sourceName;

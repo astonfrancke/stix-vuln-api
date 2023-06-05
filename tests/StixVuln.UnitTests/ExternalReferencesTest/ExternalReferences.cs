@@ -3,7 +3,7 @@ using StixVuln.Core.Vulnerability;
 
 using Xunit;
 
-namespace StixVuln.UnitTests.VulnerabilityTests;
+namespace StixVuln.UnitTests.ExternalReferencesTest;
 public class ExternalReferences
 {
 

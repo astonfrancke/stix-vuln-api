@@ -1,7 +1,6 @@
-﻿using System.Text.Json;
+﻿using FluentValidation;
 
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-
+using StixVuln.Api.DTO.Vulnerability.Validation;
 using StixVuln.Api.Extensions;
 using StixVuln.Api.Mapping;
 
@@ -20,6 +19,8 @@ public static class DependencyInjection
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddMappings();
+        services.AddValidatorsFromAssemblyContaining<CreateVulnerabilityValidator>();
+        ValidatorOptions.Global.LanguageManager.Enabled = false;
         // Todo add ProblemDetailsFactory
         return services;
     }
